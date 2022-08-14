@@ -1,73 +1,74 @@
 .Weather {
-  padding: 20px;
-  border: 1.5px solid #00aaa0;
-  border-radius: 8px;
+	padding: 20px;
+	border: 1.5px solid #00aaa0;
+	border-radius: 8px;
 }
 
 .Weather .search-btn {
-  background-color: #ff5126;
-  border: none;
+	background-color: #ff5126;
+	border: none;
 }
 
 .Weather .overview {
-  margin-bottom: 20px;
+	margin-bottom: 20px;
 }
 
 .Weather .weather-temperature img {
-  margin-right: 5px;
-  height: 64px;
-  width: 64px;
+	margin-right: 5px;
+	height: 94px;
+	width: 64px;
+	padding-bottom: 30px;
 }
 
 .Weather .weather-temperature strong {
-  color: rgb(33, 33, 33);
-  font-size: 64px;
-  line-height: 1;
-  font-weight: 400;
+	color: rgb(33, 33, 33);
+	font-size: 64px;
+	line-height: 1;
+	font-weight: 400;
 }
 
 .Weather .weather-temperature .units {
-  position: relative;
-  font-size: 16px;
-  top: -34px;
+	position: relative;
+	font-size: 16px;
+	top: -30px;
 }
 
 .Weather .weather-temperature .active {
-  color: rgb(33, 33, 33);
-  cursor: default;
+	color: rgb(33, 33, 33);
+	cursor: default;
 }
 
 .Weather .weather-temperature .active:hover {
-  text-decoration: none;
+	text-decoration: none;
 }
 
 .Weather .weather-forecast {
-  margin-top: 10px;
+	margin-top: 10px;
 }
 
 .Weather .weather-forecast h3 {
-  color: rgb(186, 186, 186);
-  font-size: 14px;
-  font-weight: 400;
-  text-align: center;
-  height: 15px;
-  line-height: 15px;
-  padding-top: 7px;
+	color: rgb(186, 186, 186);
+	font-size: 14px;
+	font-weight: 400;
+	text-align: center;
+	height: 15px;
+	line-height: 15px;
+	padding-top: 7px;
 }
 
 .Weather .weather-forecast img {
-  display: block;
-  margin: 0 auto;
-  height: 48px;
-  width: 48px;
+	display: block;
+	margin: 0 auto;
+	height: 48px;
+	width: 48px;
 }
 
 .Weather .weather-forecast-temperature {
-  text-align: center;
-  color: rgb(135, 135, 135);
-  font-size: 13px;
-  font-weight: 400;
-  height: auto;
-  line-height: 15px;
-  white-space: nowrap;
+	text-align: center;
+	color: rgb(135, 135, 135);
+	font-size: 13px;
+	font-weight: 400;
+	height: auto;
+	line-height: 15px;
+	white-space: nowrap;
 }
