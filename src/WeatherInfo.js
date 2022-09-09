@@ -1,24 +1,24 @@
 import React from "react";
 import FormattedDate from "./FormattedDate";
+import WeatherUnits from "./WeatherUnits";
 
 export default function WeatherInfo(props) {
 	return (
 		<div className="WeatherInfo">
 			<div className="overview">
-				<h1 className="my-4">
+				<h1 className="mt-4 mb-3">
 					<strong>{props.data.city}</strong>
 				</h1>
 				<div className="row">
-					<div className="col-sm-6 weather-temperature">
+					<div className="col-sm-2">
 						<img
-							src={props.data.imgUrl}
+							src={props.data.iconUrl}
 							alt={props.data.description}
 							className="float-left"
 						/>
-						<strong>{Math.round(props.data.temperature)}</strong>
-						<span className="units">
-							<a href="/">°C</a> | <a href="/">°F</a>
-						</span>
+					</div>
+					<div className="col-sm-10 weather-temperature">
+						<WeatherUnits fahrenheit={props.data.temperature} />
 					</div>
 				</div>
 			</div>

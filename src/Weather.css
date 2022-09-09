@@ -9,28 +9,26 @@
 	border: none;
 }
 
-.Weather .overview {
-	margin-bottom: 20px;
+.Weather img {
+	height: 136px;
+	width: 116px;
+	padding-bottom: 25px;
+	padding-left: 0 !important;
+	margin-left: 0 !important;
 }
 
-.Weather .weather-temperature img {
-	margin-right: 5px;
-	height: 94px;
-	width: 64px;
-	padding-bottom: 30px;
-}
-
-.Weather .weather-temperature strong {
+.Weather .weather-temperature {
 	color: rgb(33, 33, 33);
 	font-size: 64px;
-	line-height: 1.2;
 	font-weight: 400;
+	padding-left: 30px;
 }
 
 .Weather .weather-temperature .units {
 	position: relative;
 	font-size: 16px;
-	top: -30px;
+	top: -35px;
+	padding-left: 5px;
 }
 
 .Weather .weather-temperature .active {
