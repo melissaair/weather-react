@@ -18,7 +18,7 @@ export default function WeatherForecastDay(props) {
 				<div className="col">
 					<div className="WeatherForecast-day">{day()}</div>
 					<img src={icon} alt={props.data.weather[0].description} />
-					<div classname="WeatherForecast-temperatures">
+					<div className="WeatherForecast-temperatures">
 						<span className="WeatherForecast-Ttemperature-max">
 							{Math.round(props.data.temp.max)}°
 						</span>

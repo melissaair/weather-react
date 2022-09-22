@@ -9,11 +9,21 @@ export default function App() {
 				<Weather defaultCity="Los Angeles" />
 				<footer>
 					<p>
-						<a href="https://github.com/melissaair/weather-react">
+						<a
+							href="https://github.com/melissaair/weather-react"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
 							Open-source code
 						</a>
 						, by{" "}
-						<a href="https://github.com/melissaair">Melissa Ibarra-Ramos</a>
+						<a
+							href="https://github.com/melissaair"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							Melissa Ibarra-Ramos
+						</a>
 					</p>
 				</footer>
 			</div>
