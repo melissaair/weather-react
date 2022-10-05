@@ -31,7 +31,8 @@
 
 .Weather .weather-temperature {
 	color: rgb(33, 33, 33);
-	font-size: 64px;
+	font-family: "Nunito", sans-serif;
+	font-size: 75px;
 	font-weight: 400;
 	padding-left: 30px;
 }
