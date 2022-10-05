@@ -1,12 +1,24 @@
 .Weather {
 	padding: 20px;
-	border: 1.5px solid #00aaa0;
+	border: 1px solid #00aaa0;
 	border-radius: 8px;
 }
 
 .Weather .search-btn {
-	background-color: #ff5126;
+	background-color: #00aaa0;
 	border: none;
+}
+
+.Weather .location-icon {
+	color: #00aaa0;
+	font-size: 30px;
+	align-items: center;
+	justify-content: center;
+	transition: ease-in-out 150ms all;
+}
+
+.Weather .location-icon:hover {
+	color: #ff5026;
 }
 
 .Weather img {
@@ -69,4 +81,15 @@
 	height: auto;
 	line-height: 15px;
 	white-space: nowrap;
+}
+
+.day .Weather {
+	background: linear-gradient(
+		111.4deg,
+		rgb(209, 231, 235) 7.4%,
+		rgb(238, 219, 199) 70.4%
+	);
+}
+.night .Weather {
+	background: linear-gradient(90deg, rgb(248, 247, 244) 0%, rgb(1, 1, 40) 100%);
 }

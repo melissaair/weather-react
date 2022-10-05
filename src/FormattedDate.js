@@ -1,4 +1,5 @@
 import React from "react";
+import "./Weather.css";
 
 export default function FormattedDate(props) {
 	let days = [
@@ -19,6 +20,18 @@ export default function FormattedDate(props) {
 	let minutes = props.date.getMinutes();
 	if (minutes < 10) {
 		minutes = `0${minutes}`;
+	}
+
+	let currentHour = props.date.getHours();
+	let currentMinutes = props.date.getMinutes();
+	if (currentMinutes < 10) {
+		currentMinutes = `0${currentMinutes}`;
+	}
+
+	if (currentHour >= 7 && currentHour < 20) {
+		document.body.className = "day";
+	} else {
+		document.body.className = "night";
 	}
 
 	return (

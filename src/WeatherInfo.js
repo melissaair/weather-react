@@ -1,6 +1,7 @@
 import React from "react";
 import FormattedDate from "./FormattedDate";
 import WeatherUnits from "./WeatherUnits";
+import WeatherForecast from "./WeatherForecast";
 
 export default function WeatherInfo(props) {
 	return (
@@ -43,6 +44,7 @@ export default function WeatherInfo(props) {
 						<li>Feels like: {Math.round(props.data.feelsLike)}°</li>
 					</ul>
 				</div>
+				<WeatherForecast coordinates={props.data.coordinates} />
 			</div>
 		</div>
 	);
