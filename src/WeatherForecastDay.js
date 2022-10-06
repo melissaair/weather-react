@@ -1,5 +1,6 @@
 import React from "react";
 import "./WeatherForecast.css";
+import "./Weather.css";
 
 export default function WeatherForecastDay(props) {
 	let icon = `http://openweathermap.org/img/wn/${props.data.weather[0].icon}@2x.png`;
@@ -15,12 +16,12 @@ export default function WeatherForecastDay(props) {
 
 	return (
 		<div className="WeatherForecast">
-			<div className="row mt-4 WeatherForecastDaily">
+			<div className="row mt-4">
 				<div className="col">
 					<div className="WeatherForecast-day">{day()}</div>
 					<img src={icon} alt={props.data.weather[0].description} />
 					<div className="WeatherForecast-temperatures">
-						<span className="WeatherForecast-Ttemperature-max">
+						<span className="WeatherForecast-temperature-max">
 							{Math.round(props.data.temp.max)}°
 						</span>
 						<span className="WeatherForecast-temperature-min">
