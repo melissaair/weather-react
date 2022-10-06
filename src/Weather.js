@@ -51,7 +51,7 @@ export default function Weather(props) {
 	let form = (
 		<form onSubmit={handleSubmit} className="mb-3">
 			<div className="row">
-				<div className="col-6">
+				<div className="col-sm-8">
 					<input
 						type="search"
 						placeholder="Type a city.."
@@ -61,21 +61,21 @@ export default function Weather(props) {
 						onChange={handleCityChange}
 					/>
 				</div>
-				<div className="col-3">
+				<div className="col-sm-3 mt-2">
 					<input
 						type="submit"
 						value="Search"
 						className="btn btn-primary w-100 search-btn"
 					/>
 				</div>
-				<div className=" col-sm-3">
+				<div className=" col-sm-1">
 					<a
 						href="/"
 						label="current location search button"
 						rel="noopener no referrer"
 						onClick={handleCurrentLocation}
 					>
-						<i class="fa-sharp fa-solid fa-location-dot location-icon"></i>
+						<i class="fa-solid fa-location-arrow location-icon"></i>
 					</a>
 				</div>
 			</div>

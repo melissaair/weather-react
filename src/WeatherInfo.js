@@ -39,9 +39,18 @@ export default function WeatherInfo(props) {
 				</div>
 				<div className="col-6">
 					<ul>
-						<li>Humidity: {props.data.humidity}%</li>
-						<li>Wind: {props.data.wind} km/h</li>
-						<li>Feels like: {Math.round(props.data.feelsLike)}°</li>
+						<li>
+							<span className="description-title"> Humidity:</span>{" "}
+							{props.data.humidity}%
+						</li>
+						<li>
+							<span className="description-title"> Wind:</span>{" "}
+							{props.data.wind} km/h
+						</li>
+						<li>
+							<span className="description-title">Feels like:</span>{" "}
+							{Math.round(props.data.feelsLike)}°
+						</li>
 					</ul>
 				</div>
 				<WeatherForecast coordinates={props.data.coordinates} />
