@@ -61,7 +61,7 @@ export default function Weather(props) {
 						onChange={handleCityChange}
 					/>
 				</div>
-				<div className="col-sm-3 mt-2">
+				<div className="col-sm-3">
 					<input
 						type="submit"
 						value="Search"
@@ -75,7 +75,7 @@ export default function Weather(props) {
 						rel="noopener no referrer"
 						onClick={handleCurrentLocation}
 					>
-						<i class="fa-solid fa-location-arrow location-icon"></i>
+						<i className="fa-solid fa-location-arrow location-icon"></i>
 					</a>
 				</div>
 			</div>

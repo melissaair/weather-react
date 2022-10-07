@@ -26,11 +26,17 @@ export default function WeatherForecast(props) {
 	}
 
 	if (loaded) {
-		console.log(forecast);
 		return (
 			<div className="WeatherForecast">
 				<div className="container">
-					<div className="row">
+					<div className="row my-4">
+						<div className="col-1">
+							<i class="fa-solid fa-calendar-days calendar-icon"></i>
+						</div>
+						<div className="col-11">
+							<h3>5-DAY FORECAST</h3>
+						</div>
+						<hr />
 						{forecast.map(function(dailyForecast, index) {
 							if (index < 5) {
 								return (

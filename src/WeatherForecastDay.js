@@ -15,9 +15,9 @@ export default function WeatherForecastDay(props) {
 	}
 
 	return (
-		<div className="WeatherForecast">
-			<div className="row mt-4">
-				<div className="col">
+		<div className="d-flex WeatherForecast">
+			<div className="d-flex justify-content-sm-between">
+				<div className="p-1">
 					<div className="WeatherForecast-day">{day()}</div>
 					<img src={icon} alt={props.data.weather[0].description} />
 					<div className="WeatherForecast-temperatures">

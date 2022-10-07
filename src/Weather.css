@@ -22,6 +22,7 @@
 	align-items: center;
 	justify-content: center;
 	transition: ease-in-out 150ms all;
+	cursor: pointer;
 }
 
 .Weather .location-icon:hover {
@@ -36,12 +37,16 @@
 	margin-left: 0 !important;
 }
 
+.Weather .overview {
+	margin-left: 10px;
+}
+
 .Weather .weather-temperature {
 	color: white;
 	font-family: "Nunito", sans-serif;
-	font-size: 75px;
+	font-size: 80px;
 	font-weight: 400;
-	padding-left: 30px;
+	padding-left: 50px;
 }
 
 .Weather .weather-temperature .units {
@@ -60,27 +65,6 @@
 	text-decoration: none;
 }
 
-.Weather .weather-forecast {
-	margin-top: 10px;
-}
-
-.Weather .weather-forecast h3 {
-	color: white;
-	font-size: 14px;
-	font-weight: 500;
-	text-align: center;
-	height: 15px;
-	line-height: 15px;
-	padding-top: 7px;
-}
-
-.Weather .weather-forecast img {
-	display: block;
-	margin: 0 auto;
-	height: 48px;
-	width: 48px;
-}
-
 .Weather .WeatherForecast-temperatures {
 	text-align: center;
 	color: black;
@@ -97,6 +81,10 @@
 
 .Weather a:hover {
 	color: #ff5026;
+}
+
+.calendar-icon {
+	opacity: 0.6;
 }
 
 .day .Weather {
@@ -141,11 +129,27 @@ span {
 		text-align: center;
 	}
 
+	ul {
+		margin: 10px 10px;
+	}
+
+	.search-btn {
+		margin-top: 10px;
+	}
+
 	.location-icon {
 		display: flex;
 	}
 
+	.overview {
+		margin: 40px 30px 0;
+	}
+
 	.overview .weather-temperature {
-		padding-left: 70px;
+		padding-left: 85px;
+	}
+
+	.Weather .weather-temperature {
+		font-weight: 300;
 	}
 }
